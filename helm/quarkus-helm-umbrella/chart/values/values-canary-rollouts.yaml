@@ -24,7 +24,7 @@ products-blue:
   mode: online
   quarkus-base:
     image:
-      tag: v1.1.1
+      tag: v1.1.2
     version: none
     replicaCount: 4
     fullnameOverride: "products"
@@ -34,10 +34,10 @@ products-blue:
         steps:
           - setWeight: 25
           - pause:
-              duration: 30s
+              duration: 300s
           - setWeight: 50
           - pause:
-              duration: 30s
+              duration: 300s
   fullnameOverride: "products"
   
 global:
